@@ -4,7 +4,7 @@ body {
 	font-family: 'M PLUS 1p', sans-serif;
 }
 header {
-	background-color: #ffd1dc;
+	background-color: #ddd;
 	height: 90vh;
 	position: relative;
 }
@@ -12,7 +12,8 @@ header .image {
 	background: url("me.png") no-repeat center bottom;
 	position: absolute;
 	left: 0; right: 0; top: 0; bottom: 0;
-	background-size: 20em;
+	background-size: auto 50%;
+	filter: grayscale(100%);
 }
 header .text {
 	left: 1em;
@@ -49,11 +50,14 @@ b {
 #about {
 	width: 60em;
 	margin: 0 auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 #projects {
 	background-color: #333;
 	margin-top: 1em;
 	color: #eee;
+	padding-top: 2em;
 	padding-bottom: 2em;
 }
 #projects .container {
@@ -63,6 +67,8 @@ b {
 #contact {
 	width: 60em;
 	margin: 0 auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 .project {
 	margin-bottom: 1em;
