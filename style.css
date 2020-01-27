@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400,700');
+body {
+	margin: 0 auto;
+	font-family: 'M PLUS 1p', sans-serif;
+}
+header {
+	background-color: #ffd1dc;
+	height: 90vh;
+	position: relative;
+}
+header .image {
+	background: url("me.png") no-repeat center bottom;
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+	background-size: 20em;
+}
+header .text {
+	left: 1em;
+	position: absolute;
+	top: 0.5em;
+	right: 1em;
+	color: #333;
+	font-weight: 400;
+	text-align: center;
+}
+h1 {
+	margin: 0;
+	font-size: 3em;
+	font-weight: 400;
+}
+h2 {
+	margin: 0;
+	margin-top: 0.5em;
+	font-size:;
+	font-weight: 400;
+}
+header h2 {
+	margin-top: 0;
+}
+h3 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 400;
+
+}
+b {
+	font-weight: 700;
+}
+#about {
+	width: 60em;
+	margin: 0 auto;
+}
+#projects {
+	background-color: #333;
+	margin-top: 1em;
+	color: #eee;
+	padding-bottom: 2em;
+}
+#projects .container {
+	width: 60em;
+	margin: 0 auto;
+}
+#contact {
+	width: 60em;
+	margin: 0 auto;
+}
+.project {
+	margin-bottom: 1em;
+}
+.button {
+	background-color: #ffd1dc;
+	color: black;
+	padding: 0.3em 1em;
+	margin: 0em;
+	text-align: center;
+	display: inline-block;
+	white-space: nowrap;
+}
+.button:hover {
+	background-color: #ffebef;
+}
+.experience {
+	background-color: #f5f5f5;
+	padding: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  width: 1.5em;
+}
+footer {
+	margin: 0 auto;
+	text-align: center;
+	width: 60em;
+	padding: 0.5em;
+}
