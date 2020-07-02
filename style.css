@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400,700');
 body {
+	overflow-x: hidden;
 	margin: 0 auto;
 	font-family: 'M PLUS 1p', sans-serif;
 }
 header {
 	background-color: #ddd;
 	height: 90vh;
-	position: relative;
 }
 header .image {
 	background: url("me.png") no-repeat center bottom;
@@ -23,6 +23,8 @@ header .text {
 	color: #333;
 	font-weight: 400;
 	text-align: center;
+	width: 50%;
+	margin: 0 auto;
 }
 h1 {
 	margin: 0;
@@ -47,28 +49,14 @@ h3 {
 b {
 	font-weight: 700;
 }
-#about {
+.section_inner {
 	width: 60em;
 	margin: 0 auto;
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding: 2em;
 }
 #projects {
 	background-color: #333;
-	margin-top: 1em;
 	color: #eee;
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
-#projects .container {
-	width: 60em;
-	margin: 0 auto;
-}
-#contact {
-	width: 60em;
-	margin: 0 auto;
-	padding-top: 2em;
-	padding-bottom: 2em;
 }
 .project {
 	margin-bottom: 1em;
@@ -98,9 +86,6 @@ b {
   width: 1.5em;
 }
 footer {
-	margin: 0 auto;
 	text-align: center;
-	width: 60em;
-	padding: 0.5em;
 	margin-bottom: 2em;
 }
