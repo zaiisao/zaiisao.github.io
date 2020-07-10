@@ -5,36 +5,35 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="jquery-3.5.1.min.js"></script>
 	<script>
-		let languageKeys = {
-			en: {
-				'title': 'Jeremy Ahn',
-				'header1': 'Jeremy Ahn',
-				'header2': 'I am a software engineer in Seoul, South Korea and have experience in a variety of programming languages and frameworks. Feel free to look below for details!',
-				'resume': 'Just here for the resume? Cut to the chase!',
-				'resume_button': 'View Resume',
-				'about': 'I\'m a software engineer mainly with experience in the engineering user interfaces, but try my best to be as well-rounded as possible in other areas of software. I currently live in Seoul, South Korea.',
-				'education': 'What\'s a Seawolf?',
-				'university_name': '<b>Stony Brook University</b>',
-				'university_major': 'BS in <b>Computer Science</b>',
-				'university_date': 'August 2016 to May 2020',
-				'work_experience': 'Some of my work experience...',
-			},
-			kr: {
-				'title': 'Ahn Jaehoon',
-				'header1': 'Ahn Jaehoon',
-				'header2': '나는 현재 대한민국 서울시에 거주하는 소프트웨어 엔지니어이며, 다양한 프로그래밍 언어와 프레임워크에 사용하는 경험이 있습니다. 아래에 자세한 정보를 참고하시기 바랍니다!',
-				'resume': '이력서를 보고 싶으신가요?',
-				'resume_button': '이력서 보기',
-				'about': '나는 사용자 인터페이스(UI)를 전문으로 하는 소프트웨어 엔지니어이지만 다른 분야도 하려고 합니다. 현재 대한민국 서울시에서 거주하고 있습니다.',
-				'education': 'Education',
-				'university_name': '<b>스토니브룩 대학교</b> <span style="font-size:0.8em">(Stony Brook University)</span>',
-				'university_major': '학사, <b>컴퓨터 과학</b> <span style="font-size:0.8em">(소프트웨어)</span>',
-				'university_date': '08.2016 ~ 05.2020',
-				'work_experience': 'Experience',
-			}
-		}
-
 		$(function() {
+			let languageKeys = {
+				en: {
+					'title': 'Jeremy Ahn',
+					'header1': 'Jeremy Ahn',
+					'header2': 'I am a software engineer in Seoul, South Korea and have experience in a variety of programming languages and frameworks. Feel free to look below for details!',
+					'resume': 'Just here for the resume? Cut to the chase!',
+					'resume_button': 'View Resume',
+					'about': 'I\'m a software engineer mainly with experience in the engineering user interfaces, but try my best to be as well-rounded as possible in other areas of software. I currently live in Seoul, South Korea.',
+					'education': 'What\'s a Seawolf?',
+					'university_name': '<b>Stony Brook University</b>',
+					'university_major': 'BS in <b>Computer Science</b>',
+					'university_date': 'August 2016 to May 2020',
+					'work_experience': 'Some of my work experience...',
+				},
+				kr: {
+					'title': 'Ahn Jaehoon',
+					'header1': 'Ahn Jaehoon',
+					'header2': '나는 현재 대한민국 서울시에 거주하는 소프트웨어 엔지니어이며, 다양한 프로그래밍 언어와 프레임워크에 사용하는 경험이 있습니다. 아래에 자세한 정보를 참고하시기 바랍니다!',
+					'resume': '이력서를 보고 싶으신가요?',
+					'resume_button': '이력서 보기',
+					'about': '나는 사용자 인터페이스(UI)를 전문으로 하는 소프트웨어 엔지니어이지만 다른 분야도 하려고 합니다. 현재 대한민국 서울시에서 거주하고 있습니다.',
+					'education': 'Education',
+					'university_name': '<b>스토니브룩 대학교</b> <span style="font-size:0.8em">(Stony Brook University)</span>',
+					'university_major': '학사, <b>컴퓨터 과학</b> <span style="font-size:0.8em">(소프트웨어)</span>',
+					'university_date': '08.2016 ~ 05.2020',
+					'work_experience': 'Experience',
+				}
+			}
 			let language = localStorage.getItem('language');
         	changeLanguage(language);
 
