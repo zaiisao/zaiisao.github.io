@@ -43,7 +43,8 @@
 
 			let language = localStorage.getItem('language');
 			if (language == null) {
-				localStorage.setItem('language', 'en');
+				language = 'en';
+				localStorage.setItem('language', language);
 			}
         	changeLanguage(language);
 
