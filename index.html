@@ -14,10 +14,13 @@
 					'resume': 'Just here for the resume? Cut to the chase!',
 					'resume_button': 'View Resume',
 					'about': 'I\'m a software engineer mainly with experience in the engineering user interfaces, but try my best to be as well-rounded as possible in other areas of software. I currently live in Seoul, South Korea.',
-					'education': 'What\'s a Seawolf?',
-					'university_name': '<b>Stony Brook University</b>',
-					'university_major': 'BS in <b>Computer Science</b>',
-					'university_date': 'August 2016 to May 2020',
+					'education': 'My educational background',
+					'undergrad_name': '<b>Stony Brook University</b>',
+					'undergrad_major': 'BS in <b>Computer Science</b>',
+					'undergrad_date': 'August 2016 to May 2020',
+					'postgrad_name': '<b>Sogang University</b>',
+					'postgrad_major': 'MS in <b>Media Technology</b>',
+					'postgrad_date': 'Starting in September 2020',
 					'work_experience': 'Some of my work experience...',
 				},
 				kr: {
@@ -28,13 +31,18 @@
 					'resume_button': '이력서 보기',
 					'about': '나는 사용자 인터페이스(UI)를 전문으로 하는 소프트웨어 엔지니어이지만 다른 분야도 하려고 합니다. 현재 대한민국 서울시에서 거주하고 있습니다.',
 					'education': 'Education',
-					'university_name': '<b>스토니브룩 대학교</b> <span style="font-size:0.8em">(Stony Brook University)</span>',
-					'university_major': '학사, <b>컴퓨터 과학</b> <span style="font-size:0.8em">(소프트웨어)</span>',
-					'university_date': '08.2016 ~ 05.2020',
+					'undergrad_name': '<b>스토니브룩 대학교</b> <span style="font-size:0.8em">(Stony Brook University)</span>',
+					'undergrad_major': '학사, <b>컴퓨터 과학</b> <span style="font-size:0.8em">(소프트웨어)</span>',
+					'undergrad_date': '08.2016 ~ 05.2020',
+					'postgrad_name': '<b>서강대학교</b>',
+					'postgrad_major': '석사, <b>미디어 공학</b>',
+					'postgrad_date': '올해 9월에 시작할 예정',
 					'work_experience': 'Experience',
 				}
 			}
+
 			let language = localStorage.getItem('language');
+			console.log(language);
         	changeLanguage(language);
 
 			function changeLanguage(language) {
@@ -77,13 +85,23 @@
 
 			<table>
 				<tr>
-					<td>
-						<img src="sbu.png" style="height: 3em; width: auto; margin: 1em" />
+					<td class="school_image_column">
+						<img src="sogang.png" />
 					</td>
 					<td>
-						<span class="lang" key="university_name"></span><br />
-						<span class="lang" key="university_major"></span><br />
-						<span class="lang" key="university_date"></span>
+						<span class="lang" key="postgrad_name"></span><br />
+						<span class="lang" key="postgrad_major"></span><br />
+						<span class="lang" key="postgrad_date"></span>
+					</td>
+				</tr>
+				<tr>
+					<td class="school_image_column">
+						<img src="sbu.png" />
+					</td>
+					<td>
+						<span class="lang" key="undergrad_name"></span><br />
+						<span class="lang" key="undergrad_major"></span><br />
+						<span class="lang" key="undergrad_date"></span>
 					</td>
 				</tr>
 			</table>
