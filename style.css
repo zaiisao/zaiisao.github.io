@@ -52,10 +52,10 @@ b {
 	margin: 0 auto;
 	padding: 2em;
 }
-.school_image_column {
+.image_column {
 	text-align: center;
 }
-.school_image_column img {
+.image_column img {
 	height: 3em;
 	width: auto;
 	margin: 1em;
@@ -84,6 +84,16 @@ b {
 	padding: 0.5em;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+}
+.experience tr {
+	vertical-align: top;
+}
+.experience_details {
+	white-space: nowrap;
+	line-height: 1.3;
+	padding-right: 1em;
+	padding-bottom: 0.5em;
+	float: left;
 }
 .heart {
   fill: red;
