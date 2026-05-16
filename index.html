@@ -1,9 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaehoon Ahn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="wrap">
+
+  <nav class="lang-sw">
+    <button class="active" onclick="setLang('en')">EN</button>
+    <button onclick="setLang('ko')">한국어</button>
+    <button onclick="setLang('zh-hans')">简体</button>
+    <button onclick="setLang('zh-hant')">繁體</button>
+  </nav>
+
+  <header>
+    <h1 id="name-header">Jaehoon Ahn</h1>
+    <div class="tagline" data-i18n="tagline">PhD Candidate in Media Engineering · Sogang University · Seoul, South Korea</div>
+    <div class="contact">
+      <a href="mailto:ahnza245@gmail.com">ahnza245@gmail.com</a><span class="sep">·</span>
+      <a href="https://github.com/zaiisao">GitHub</a><span class="sep">·</span>
+      <a href="https://linkedin.com/in/ahnjaehoon">LinkedIn</a><span class="sep">·</span>
+      <a href="https://scholar.google.com/citations?user=Kc6avhgAAAAJ&hl=ko">Google Scholar</a><span class="sep">·</span>
+      <a href="Jaehoon_Ahn_Resume.pdf" data-i18n="link_resume">Resume</a>
+    </div>
+  </header>
+
+  <section>
+    <h2 data-i18n="h_about">About</h2>
+    <p data-i18n="about_1">I am a PhD candidate at Sogang University advised by Prof. Moon-Ryul Jung, with coursework completed as of August 2025. My research sits at the intersection of machine learning and underserved domains: music information retrieval, low-resource NLP for ancient languages, motion synthesis, and content safety.</p>
+    <p data-i18n="about_2">Alongside my graduate studies I spent three years shipping Roblox experiences at Dubit for clients including Viacom, Samsung, and SM Entertainment, among others, and most recently worked as an AI research engineer at Paralov. I hold a BS in Computer Science from Stony Brook University and am a US / South Korean dual citizen based in Seoul.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2 data-i18n="h_pub">Publications</h2>
+    <div class="item">
+      <div class="item-title">SMC Blind Spot <span class="badge" data-i18n="badge_review">Under review</span></div>
+      <div class="item-desc" data-i18n="pub1_desc">Beat tracking failure mode analysis of hard music audio samples.</div>
+      <div class="item-meta">arXiv 2605.12287, 2026 · ISMIR 2026</div>
+      <div class="item-links"><a href="https://arxiv.org/abs/2605.12287">arXiv</a></div>
+    </div>
+    <div class="item">
+      <div class="item-title">BeatFCOS</div>
+      <div class="item-desc" data-i18n="pub2_desc">Adapting object detection architecture for beat tracking in music audio.</div>
+      <div class="item-meta">arXiv 2510.14391, 2025</div>
+      <div class="item-links"><a href="https://arxiv.org/abs/2510.14391">arXiv</a></div>
+    </div>
+    <div class="item">
+      <div class="item-title">ConTEXTure</div>
+      <div class="item-desc" data-i18n="pub3_desc">Text-driven 3D texture generation via diffusion-based multi-view inverse rendering.</div>
+      <div class="item-meta">arXiv 2407.10558, 2024</div>
+      <div class="item-links"><a href="https://arxiv.org/abs/2407.10558">arXiv</a></div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2 data-i18n="h_research">Selected Research</h2>
+    <div class="item">
+      <div class="item-title" data-i18n="res1_title">Extending LMs to Low-Resource Languages</div>
+      <div class="item-desc" data-i18n="res1_desc">Extending a multilingual language model to support low-resource languages with unseen scripts (Coptic, Syriac, Gothic, OCS Glagolitic, Samaritan). Results yield 8–106× perplexity reduction over conventional fine-tuning. Paper in preparation.</div>
+    </div>
+    <div class="item">
+      <div class="item-title">VBPM (Variational Bar Pointer Model)</div>
+      <div class="item-desc" data-i18n="res2_desc">Replaces the traditional Dynamic Bayesian Network in beat tracking pipelines with a fully differentiable variational model over structured latent variables, allowing for end-to-end training.</div>
+    </div>
+    <div class="item">
+      <div class="item-title">KineGuard</div>
+      <div class="item-desc" data-i18n="res3_desc">Skeleton-based content safety classifier for real-time unsafe motion detection. Built multi-GPU video processing pipeline with WHAM inference.</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2 data-i18n="h_exp">Experience</h2>
+    <div class="item">
+      <div class="item-title" data-i18n="exp1_role">AI Research Engineer (Contract)</div>
+      <div class="item-meta">Paralov · Remote (Norway) · Dec 2024 – May 2025</div>
+      <div class="item-desc" data-i18n="exp1_desc">Extended an AI-powered game generation pipeline for Roblox, integrating multimodal LLMs and image embeddings while engineering workarounds for closed-platform constraints.</div>
+    </div>
+    <div class="item">
+      <div class="item-title" data-i18n="exp2_role">Game Developer</div>
+      <div class="item-meta">Dubit · Remote (UK) · Jul 2021 – Jun 2024</div>
+      <div class="item-desc" data-i18n="exp2_desc">Shipped Roblox experiences for clients including Viacom, Samsung, and SM Entertainment, among others. Tens of millions of unique player visits.</div>
+    </div>
+    <div class="item">
+      <div class="item-title" data-i18n="exp3_role">Software Engineering Intern</div>
+      <div class="item-meta">Roblox · San Mateo, US · Jun – Nov 2019</div>
+      <div class="item-desc" data-i18n="exp3_desc">Implemented a redesigned mobile app landing page and login flow using Lua and React, with platform-specific fixes in Java, Objective-C, and C++.</div>
+    </div>
+    <div class="item">
+      <div class="item-title" data-i18n="exp4_role">Software Engineering Intern</div>
+      <div class="item-meta">DribbleUp · Brooklyn, US · May – Aug 2017</div>
+      <div class="item-desc" data-i18n="exp4_desc">Developed features for a cross-platform React Native mobile app used by thousands of consumers.</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2 data-i18n="h_edu">Education</h2>
+    <div class="item">
+      <div class="item-title" data-i18n="edu1_title">PhD Candidate in Media Engineering (ML/AI Focus)</div>
+      <div class="item-meta" data-i18n="edu1_meta">Sogang University · Seoul, South Korea · Mar 2023 – Present</div>
+      <div class="item-desc" data-i18n="edu1_desc">Advisor: Prof. Moon-Ryul Jung. Coursework completed August 2025.</div>
+    </div>
+    <div class="item">
+      <div class="item-title" data-i18n="edu2_title">MS in Media Engineering</div>
+      <div class="item-meta" data-i18n="edu2_meta">Sogang University · Seoul, South Korea · Sep 2020 – Feb 2023</div>
+      <div class="item-desc" data-i18n="edu2_desc">Thesis: "Adapting object detection techniques for beat tracking in musical audio."</div>
+      <div class="item-links"><a href="Masters_Thesis_Jaehoon_Ahn.pdf" data-i18n="link_thesis">PDF</a></div>
+    </div>
+    <div class="item">
+      <div class="item-title" data-i18n="edu3_title">BS in Computer Science</div>
+      <div class="item-meta" data-i18n="edu3_meta">Stony Brook University · New York, US · Aug 2016 – May 2020</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2 data-i18n="h_skills">Skills</h2>
+    <div class="skills-row"><strong>ML/DL:</strong> PyTorch, diffusion models, VAEs, transformers, object detection, LLM orchestration</div>
+    <div class="skills-row"><strong data-i18n="sk_lang">Languages:</strong> Python, JavaScript/TypeScript, Lua/Luau, Java, C#, C/C++</div>
+    <div class="skills-row"><strong data-i18n="sk_infra">Infrastructure:</strong> Multi-GPU training/inference, CUDA, Docker, Git, REST APIs</div>
+    <div class="skills-row"><strong data-i18n="sk_spoken">Spoken:</strong> <span data-i18n="sk_spoken_val">Bilingual English/Korean; Mandarin Chinese (B1)</span></div>
+  </section>
+
+  <footer data-i18n="footer">Jaehoon Ahn · Seoul, South Korea · US / South Korean dual citizen</footer>
+
+</div>
+
+<script>
+const T = {
+  en: {},
+  ko: {
+    tagline: '미디어공학 박사 수료 · 서강대학교 · 대한민국 서울',
+    h_about: '소개',
+    about_1: '서강대학교에서 정문열 교수님 지도하에 박사과정을 밟고 있으며, 2025년 8월 기준 수료 상태입니다. 음악 정보 검색, 고대 저자원 언어를 위한 자연어 처리, 모션 합성, 콘텐츠 안전성 등 기계학습과 소외된 분야의 교차점에서 연구하고 있습니다.',
+    about_2: '대학원 과정과 병행하여 Dubit에서 3년간 Viacom, 삼성, SM엔터테인먼트 등의 클라이언트를 위한 Roblox 게임을 개발했으며, 가장 최근에는 Paralov에서 AI 연구 엔지니어로 게임 생성 파이프라인을 구축했습니다. 뉴욕주립대학교 (스토니브룩)에서 컴퓨터공학 학사를 취득했으며, 서울에 거주하는 한미 이중국적자입니다.',
+    h_pub: '논문',
+    badge_review: '심사 중',
+    pub1_desc: '난이도 높은 음악 오디오 샘플에서의 비트 트래킹 실패 모드 분석.',
+    pub2_desc: '음악 오디오 비트 트래킹을 위한 객체 탐지 아키텍처 적용.',
+    pub3_desc: '확산 기반 다시점 역렌더링을 통한 텍스트 기반 3D 텍스처 생성.',
+    h_research: '진행 중인 연구',
+    res1_title: '저자원 언어를 위한 언어 모델 확장',
+    res1_desc: '미지원 문자 체계(콥트어, 시리아어, 고트어, 고대교회슬라브어 글라골리차, 사마리아어)를 가진 저자원 언어를 지원하도록 다국어 언어 모델을 확장. 기존 파인튜닝 대비 8–106배의 퍼플렉서티 감소. 논문 준비 중.',
+    res2_desc: '비트 트래킹 파이프라인의 기존 동적 베이지안 네트워크를 구조화된 잠재 변수에 대한 완전 미분 가능한 변분 모델로 대체하여 종단간 학습 가능.',
+    res3_desc: '실시간 위험 동작 감지를 위한 스켈레톤 기반 콘텐츠 안전성 분류기. WHAM 추론을 활용한 다중 GPU 비디오 처리 파이프라인 구축.',
+    h_exp: '경력',
+    exp1_role: 'AI 연구 엔지니어 (계약직)',
+    exp1_desc: 'Roblox용 AI 기반 게임 생성 파이프라인을 확장. 멀티모달 LLM과 이미지 임베딩을 통합하고, 폐쇄형 플랫폼의 제약을 우회하는 솔루션을 설계.',
+    exp2_role: '게임 개발자',
+    exp2_desc: 'Viacom, 삼성, SM엔터테인먼트 등의 클라이언트를 위한 Roblox 경험 출시. 수천만 건의 고유 플레이어 방문.',
+    exp3_role: '소프트웨어 엔지니어링 인턴',
+    exp3_desc: 'Lua와 React를 사용하여 모바일 앱의 랜딩 페이지와 로그인 플로우 재설계 구현. Java, Objective-C, C++로 플랫폼별 수정 작업 수행.',
+    exp4_role: '소프트웨어 엔지니어링 인턴',
+    exp4_desc: '수천 명의 사용자가 이용하는 크로스플랫폼 React Native 모바일 앱의 기능 개발.',
+    h_edu: '학력',
+    edu1_title: '미디어공학 박사 수료 (ML/AI 중심)',
+    edu1_meta: '서강대학교 · 대한민국 서울 · 2023년 3월 – 현재',
+    edu1_desc: '지도교수: 정문열. 2025년 8월 수료.',
+    edu2_title: '미디어공학 석사',
+    edu2_meta: '서강대학교 · 대한민국 서울 · 2020년 9월 – 2023년 2월',
+    edu2_desc: '학위논문: "음악 오디오에서의 비트 트래킹을 위한 객체 탐지 기법 적용."',
+    edu3_title: '컴퓨터공학 학사',
+    edu3_meta: '뉴욕주립대학교 (스토니브룩) · 미국 뉴욕 · 2016년 8월 – 2020년 5월',
+    h_skills: '기술',
+    sk_lang: '프로그래밍 언어:',
+    sk_infra: '인프라:',
+    sk_spoken: '구사 언어:',
+    sk_spoken_val: '한국어·영어 (이중 모국어), 중국어 (B1)',
+    link_resume: '이력서',
+    link_thesis: 'PDF',
+    footer: '안재훈 · 대한민국 서울 · 한미 이중국적자'
+  },
+  'zh-hans': {
+    tagline: '媒体工程博士研究生 · 西江大学 · 韩国首尔',
+    h_about: '简介',
+    about_1: '我是西江大学的博士研究生，师从 Moon-Ryul Jung 教授，已于2025年8月完成全部课程。我的研究方向聚焦于机器学习与小众领域的交叉：音乐信息检索、面向古代低资源语言的自然语言处理、动作合成以及内容安全。',
+    about_2: '在攻读研究生期间，我同时在Dubit从事三年Roblox游戏开发，服务Viacom、三星、SM娱乐等客户；最近在Paralov担任AI研究工程师，构建游戏生成管线。我持有石溪大学计算机科学学士学位，现居首尔，拥有美韩双重国籍。',
+    h_pub: '发表论文',
+    badge_review: '审稿中',
+    pub1_desc: '高难度音乐音频样本的节拍追踪失效模式分析。',
+    pub2_desc: '将目标检测架构应用于音乐音频节拍追踪。',
+    pub3_desc: '基于扩散多视角逆渲染的文本驱动3D纹理生成。',
+    h_research: '进行中的研究',
+    res1_title: '将语言模型扩展至低资源语言',
+    res1_desc: '扩展多语言语言模型以支持具有未见文字系统的低资源语言（科普特语、叙利亚语、哥特语、古教会斯拉夫语格拉哥里字母、撒玛利亚语）。结果在常规微调基础上实现8–106倍困惑度降低。论文准备中。',
+    res2_desc: '用结构化隐变量上的完全可微分变分模型替代节拍追踪管线中的传统动态贝叶斯网络，实现端到端训练。',
+    res3_desc: '用于实时不安全动作检测的基于骨骼的内容安全分类器。构建了基于WHAM推理的多GPU视频处理管线。',
+    h_exp: '工作经历',
+    exp1_role: 'AI研究工程师（合约）',
+    exp1_desc: '扩展面向Roblox的AI游戏生成管线，集成多模态LLM和图像嵌入，并针对封闭平台限制设计解决方案。',
+    exp2_role: '游戏开发工程师',
+    exp2_desc: '为Viacom、三星、SM娱乐等客户发布Roblox游戏体验，累计数千万独立玩家访问。',
+    exp3_role: '软件工程实习生',
+    exp3_desc: '使用Lua和React实现重新设计的移动应用着陆页与登录流程，并用Java、Objective-C、C++进行平台特定修复。',
+    exp4_role: '软件工程实习生',
+    exp4_desc: '为数千名用户使用的跨平台React Native移动应用开发功能。',
+    h_edu: '教育经历',
+    edu1_title: '媒体工程博士研究生（ML/AI方向）',
+    edu1_meta: '西江大学 · 韩国首尔 · 2023年3月 – 至今',
+    edu1_desc: '导师：Moon-Ryul Jung 教授。2025年8月修完全部课程。',
+    edu2_title: '媒体工程硕士',
+    edu2_meta: '西江大学 · 韩国首尔 · 2020年9月 – 2023年2月',
+    edu2_desc: '学位论文："将目标检测技术应用于音乐音频中的节拍追踪。"',
+    edu3_title: '计算机科学学士',
+    edu3_meta: '石溪大学 · 美国纽约 · 2016年8月 – 2020年5月',
+    h_skills: '技能',
+    sk_lang: '编程语言：',
+    sk_infra: '基础设施：',
+    sk_spoken: '口语：',
+    sk_spoken_val: '英语/韩语（双母语）、中文（B1）',
+    link_resume: '简历',
+    link_thesis: 'PDF',
+    footer: '安宰勋 · 韩国首尔 · 美韩双重国籍'
+  },
+  'zh-hant': {
+    tagline: '媒體工程博士研究生 · 西江大學 · 韓國首爾',
+    h_about: '簡介',
+    about_1: '我是西江大學的博士研究生，師從 Moon-Ryul Jung 教授，已於2025年8月完成全部課程。我的研究方向聚焦於機器學習與小眾領域的交叉：音樂資訊檢索、面向古代低資源語言的自然語言處理、動作合成以及內容安全。',
+    about_2: '在攻讀研究所期間，我同時在Dubit從事三年Roblox遊戲開發，服務Viacom、三星、SM娛樂等客戶；最近在Paralov擔任AI研究工程師，建構遊戲生成管線。我持有石溪大學電腦科學學士學位，現居首爾，擁有美韓雙重國籍。',
+    h_pub: '發表論文',
+    badge_review: '審稿中',
+    pub1_desc: '高難度音樂音訊樣本的節拍追蹤失效模式分析。',
+    pub2_desc: '將物件偵測架構應用於音樂音訊節拍追蹤。',
+    pub3_desc: '基於擴散多視角逆渲染的文本驅動3D紋理生成。',
+    h_research: '進行中的研究',
+    res1_title: '將語言模型擴展至低資源語言',
+    res1_desc: '擴展多語言語言模型以支援具有未見文字系統的低資源語言（科普特語、敘利亞語、哥特語、古教會斯拉夫語格拉哥里字母、撒瑪利亞語）。結果在常規微調基礎上實現8–106倍困惑度降低。論文準備中。',
+    res2_desc: '用結構化隱變數上的完全可微分變分模型替代節拍追蹤管線中的傳統動態貝葉斯網路，實現端到端訓練。',
+    res3_desc: '用於即時不安全動作偵測的基於骨骼的內容安全分類器。建構了基於WHAM推理的多GPU視訊處理管線。',
+    h_exp: '工作經歷',
+    exp1_role: 'AI研究工程師（合約）',
+    exp1_desc: '擴展面向Roblox的AI遊戲生成管線，整合多模態LLM和圖像嵌入，並針對封閉平台限制設計解決方案。',
+    exp2_role: '遊戲開發工程師',
+    exp2_desc: '為Viacom、三星、SM娛樂等客戶發布Roblox遊戲體驗，累計數千萬獨立玩家造訪。',
+    exp3_role: '軟體工程實習生',
+    exp3_desc: '使用Lua與React實作重新設計的行動應用程式著陸頁與登入流程，並以Java、Objective-C、C++進行平台特定修正。',
+    exp4_role: '軟體工程實習生',
+    exp4_desc: '為數千名使用者使用的跨平台React Native行動應用程式開發功能。',
+    h_edu: '教育經歷',
+    edu1_title: '媒體工程博士研究生（ML/AI方向）',
+    edu1_meta: '西江大學 · 韓國首爾 · 2023年3月 – 至今',
+    edu1_desc: '導師：Moon-Ryul Jung 教授。2025年8月修完全部課程。',
+    edu2_title: '媒體工程碩士',
+    edu2_meta: '西江大學 · 韓國首爾 · 2020年9月 – 2023年2月',
+    edu2_desc: '學位論文：「將物件偵測技術應用於音樂音訊中的節拍追蹤。」',
+    edu3_title: '電腦科學學士',
+    edu3_meta: '石溪大學 · 美國紐約 · 2016年8月 – 2020年5月',
+    h_skills: '技能',
+    sk_lang: '程式語言：',
+    sk_infra: '基礎設施：',
+    sk_spoken: '口語：',
+    sk_spoken_val: '英語/韓語（雙母語）、中文（B1）',
+    link_resume: '履歷',
+    link_thesis: 'PDF',
+    footer: '安宰勳 · 韓國首爾 · 美韓雙重國籍'
+  }
+};
+
+let currentLang = 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang === 'zh-hans' ? 'zh-CN' : lang === 'zh-hant' ? 'zh-TW' : lang;
+
+  document.querySelectorAll('.lang-sw button').forEach(btn => btn.classList.remove('active'));
+  document.querySelector('.lang-sw button[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
+
+  const names = {
+    en: 'Jaehoon Ahn',
+    ko: '안재훈 (Jaehoon Ahn)',
+    'zh-hans': '安宰勋（Jaehoon Ahn）',
+    'zh-hant': '安宰勳（Jaehoon Ahn）'
+  };
+  document.getElementById('name-header').textContent = names[lang] || names.en;
+
+  const dict = T[lang] || {};
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key]) el.textContent = dict[key];
+    else if (T.en[key]) el.textContent = T.en[key];
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    T.en[el.getAttribute('data-i18n')] = el.textContent;
+  });
+});
+</script>
 
 </body>
 </html>
